@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: aliceblue;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-size: 80px;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  color: aliceblue;
+}
+
+.btn {
+  color: aliceblue;
+  width: 50px;
+  height: 25px;
+  border-radius: 13px;
+}
+
+.btn-success {
+  color: aliceblue;
+  background-color: black;
+  border-color: aliceblue;
+  border-radius: 8;
+  height: 52px;
+  line-height: 38px;
+  width: 200px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  opacity: 0.8;
+  background-color: aliceblue;
+  transition: all 0.3s ease;
+  border-color: antiquewhite;
+  opacity: 0.;
+  color: black;
+}
+
+#banner {
+  text-align: center;
+  height: 600px;
+  background: linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.4) 70%), url(images/pexels-m-d-fahmi-5547268.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 300px 0px;
+  font-size: large;
+}
+
+.card {
+  background-color: black;
+  color: aliceblue;
+  padding: 100px;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin-right: 200px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  place-items: center;
+  text-align: center;
+}
+
+.row {
+  display: block;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: aliceblue;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+}
+
+img {
+  border-radius: 8px;
+}
