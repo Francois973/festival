@@ -6,6 +6,46 @@ body {
   overflow-x: hidden;
 }
 
+.bloc {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  margin-top: 200px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.bloc span {
+  font-size: 10vw;
+  position: relative;
+  letter-spacing: 25px;
+}
+
+.ligne {
+  width: 85vw;
+  height: 35px;
+  background: gray;
+  border-radius: 9999px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 10;
+  margin-bottom: 30px;
+}
+
+span:nth-child(odd) {
+  z-index: 11;
+}
+span:nth-child(even) {
+  z-index: 9;
+}
+
+
+
 .navbar a {
   position: relative;
   top: -270px;
