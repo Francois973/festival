@@ -222,3 +222,45 @@ h2 {
   margin-left: 400px;
   margin-top: 100px;
 }
+
+.background{
+  width: 1200px;
+  height: auto;
+  margin-left: -50px;
+  margin-top: 95px;
+  border-radius: 8px;
+}
+
+#footer{
+  position: relative;
+  background-color: black;
+  color: aliceblue;
+  font-size: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 140px;
+}
+
+.text1{
+  top: 191px;
+  color: aliceblue;
+  font-size: 15px;
+  margin-left: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+}
+
+#footer a {
+  color: lightgrey;
+  font-size: 15px;
+  align-items: center;
+}
+
+#footer a:hover {
+  color: white;
+}
+
+.list-inline{
+  display: inline-block;
+  width: auto;
+}
