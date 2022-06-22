@@ -1,9 +1,23 @@
-const allLetters = document.querySelectorAll('.bloc span');
-const ligne = document.querySelector('.ligne');
+    //Javacript for the scroll indicator bar
+    window.addEventListener("scroll", () => {
+      const indicatorBar = document.querySelector(".scroll-indicator-bar");
 
-const TLLetters = gsap.timeline();
+      const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollValue = (pageScroll / height) * 100;
 
-TLLetters
-.from(ligne, {width: '0%', opacity: 0, duration: 0.7, ease: "power1.in"})
-.from(allLetters, {opacity:0, top: gsap.utils.wrap([100,-100]), stagger: 0.1, ease: "power2.out"})
-.set(ligne, {width: '85vw'})
+      indicatorBar.style.width = scrollValue + "%";
+    });
+
+    //Responsive navigation menu toggle
+    const menuBtn = document.querySelector(".nav-menu-btn");
+    const closeBtn = document.querySelector(".nav-close-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      navigation.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      navigation.classList.remove("active");
+    });
